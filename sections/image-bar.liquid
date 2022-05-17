@@ -1,3 +1,7 @@
+{% unless section.settings.headline == blank%}
+<h2 class="text-center">{{section.settings.headline}}</h2>
+{% endunless %}
+
 <div class="grid grid--no-gutters image-bar image-bar--{{ section.settings.section_height }}">
   {% case section.blocks.size %}
     {% when 1 %}
@@ -89,6 +93,11 @@
   "class": "index-section index-section--flush",
   "max_blocks": 4,
   "settings": [
+    {
+      "type": "text",
+      "label": "Headline for Gallery Section",
+      "id": "headline"
+    },
     {
       "type": "select",
       "id": "section_height",
