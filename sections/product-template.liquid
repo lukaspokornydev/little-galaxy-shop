@@ -1,3 +1,11 @@
+ {% for tag in product.tags %}
+  {% if tag contains 'affiliate'%}
+    {% assign isAffiliateProduct = true %}
+    {% assign affiliateLink = tag | split:'_' | last %}
+  {% endif %}
+{% endfor %}
+
+
 <div class="product-template__container page-width"
   id="ProductSection-{{ section.id }}"
   data-section-id="{{ section.id }}"
@@ -135,6 +143,9 @@
       <div class="product-single__meta">
 
         <h1 class="product-single__title">{{ product.title }}</h1>
+  
+        {% unless isAffiliateProduct %}
+  
         <script>window.performance.mark('debut:product:title_visible');</script>
 
           <div class="product__price">
@@ -151,6 +162,8 @@
               {%- endif -%}
             </div>
           {%- endif -%}
+
+         
 
           {% capture "form_classes" -%}
             product-form product-form-{{ section.id }}
@@ -241,6 +254,12 @@
             </div>
           {% endform %}
         </div>
+
+
+        {% endunless %}
+        {% if isAffiliateProduct %}
+         <a data-add-to-cart class="btn product-form__cart-submit" target='_blank' href='{{affiliateLink}}'>SEE ON AMAZON</a>
+        {% endif %}
 
         {%- comment -%}
           Live region for announcing updated price and availability to screen readers
