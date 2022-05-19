@@ -3792,6 +3792,7 @@ hr {
   border: 0;
   display: block;
   vertical-align: middle; }
+  
 
 .site-header__cart-title {
   margin-right: 3px; }
@@ -7053,3 +7054,7 @@ hr {
         max-height: 100vh;
         padding:1em;
         }
+
+.jdgm-histogram__bar-content {
+  background: #20187b !important;
+}

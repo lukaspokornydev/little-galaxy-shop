@@ -1,5 +1,6 @@
 {
   "current": {
+    "color_button": "#22197d",
     "social_twitter_link": "twitter.com",
     "social_facebook_link": "facebook.com",
     "social_instagram_link": "instagram.com",
@@ -131,7 +132,7 @@
           "quotes-2"
         ],
         "settings": {
-          "title": "Our customers"
+          "title": "What customers say"
         }
       },
       "image-bar": {
@@ -277,7 +278,94 @@
           "620b819b-d3a1-4dde-b57d-b18bf2d0a76f"
         ],
         "settings": {
+          "headline": "check out our Instagram",
           "section_height": "medium"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": false,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "faq": {
+        "type": "faq",
+        "blocks": {
+          "50228f6d-10cc-48c9-ba59-db87f26a2960": {
+            "type": "headline",
+            "settings": {
+              "title": "Orders"
+            }
+          },
+          "d216c785-68c1-416a-889f-ef504c50b1e5": {
+            "type": "QA",
+            "settings": {
+              "title": "dafd",
+              "question": "Can I change or cancel my order?",
+              "answer": "All orders are final once they have been processed through the checkout. Unfortunately, no further changes can be made to your order once processed including and not limited to; removing and\/or adding items to your order, combining orders or cancelling your order."
+            }
+          },
+          "7c068d6c-8a54-4b04-b83a-0ebdd29b6760": {
+            "type": "QA",
+            "settings": {
+              "title": "",
+              "question": "What are the delivery times?",
+              "answer": "Your order will be shipped the same, or next, business day. During sale events and holidays, there may be a slightly longer duration."
+            }
+          },
+          "db592473-fc45-49db-a2ff-880dcf571f27": {
+            "type": "headline",
+            "settings": {
+              "title": "Product"
+            }
+          },
+          "2c2a1d8a-3724-4170-8bfc-2fae02e7422f": {
+            "type": "QA",
+            "settings": {
+              "title": "",
+              "question": "Can I get my product personalized?",
+              "answer": "All options are outlined on the product page, so look out for customization options there."
+            }
+          },
+          "38205df4-23f8-4d02-b151-3bc709c968a8": {
+            "type": "QA",
+            "settings": {
+              "title": "",
+              "question": "Is the projector easy to install?",
+              "answer": "Yes! All functions are self-explanatory."
+            }
+          }
+        },
+        "block_order": [
+          "50228f6d-10cc-48c9-ba59-db87f26a2960",
+          "d216c785-68c1-416a-889f-ef504c50b1e5",
+          "7c068d6c-8a54-4b04-b83a-0ebdd29b6760",
+          "db592473-fc45-49db-a2ff-880dcf571f27",
+          "2c2a1d8a-3724-4170-8bfc-2fae02e7422f",
+          "38205df4-23f8-4d02-b151-3bc709c968a8"
+        ],
+        "settings": {
+          "heading": ""
+        }
+      },
+      "wholesale": {
+        "type": "wholesale",
+        "settings": {
+          "business-types": "Retail Store, e-Commerce Store, U.S. Distributor"
         }
       }
     },
