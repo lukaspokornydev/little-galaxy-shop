@@ -766,6 +766,7 @@ slate.Variants = (function() {
       this._updateImages(variant);
       this._updatePrice(variant);
       this._updateSKU(variant);
+      this._updateDetails(variant);
       this.currentVariant = variant;
 
       if (this.enableHistoryState) {
@@ -880,7 +881,27 @@ slate.Variants = (function() {
 
       if (!masterSelect) return;
       masterSelect.value = variant.id;
+    },
+
+    _updateDetails: function(variant) {
+      var details_us = document.getElementById('details-us');
+      var details_eu = document.getElementById('details-eu');
+      if(details_us && details_eu){
+        if(variant.option2 == 'US'){
+          details_us.classList.remove('hide');
+          details_eu.classList.add('hide');
+        }
+        else if(variant.option2 == "EU"){
+          details_eu.classList.remove('hide');
+          details_us.classList.add('hide');
+        }
+      }
+
+
     }
+
+
+
   });
 
   return Variants;
